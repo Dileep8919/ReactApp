@@ -1,7 +1,8 @@
 import './App.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [count, setCount] = useState()
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCount(prevCount => prevCount + 1);
